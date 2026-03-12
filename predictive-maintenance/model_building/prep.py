@@ -13,7 +13,7 @@ api = HfApi(token=os.getenv("HF_TOKEN"))
 dataset = load_dataset("ksricheenu/Predictive-Maintenance-Prediction", split="train")
 
 # 3.2. Perform data cleaning and remove any unnecessary columns:
-There are several variables which contain outliers, we need to retain them because the data represents real engine sensor measurements, where extreme values may correspond to abnormal operating conditions or early failure signals. Removing such data could lead us to miss important predictive information. So, we can preserve the outliers for our model training. According to the above stats, we don't need to perform any cleanup/removal of data.
+#There are several variables which contain outliers, we need to retain them because the data represents real engine sensor measurements, where extreme values may correspond to abnormal operating conditions or early failure signals. Removing such data could lead us to miss important predictive information. So, we can preserve the outliers for our model training. According to the above stats, we don't need to perform any cleanup/removal of data.
 
 # converting to pandas
 df = dataset.to_pandas()
