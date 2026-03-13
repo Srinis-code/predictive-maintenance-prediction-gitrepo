@@ -1,5 +1,6 @@
 from huggingface_hub import HfApi
 import os
+import shutil
 
 api = HfApi(token=os.getenv("HF_TOKEN"))
 
