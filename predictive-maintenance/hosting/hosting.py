@@ -32,8 +32,9 @@ if os.path.exists(dockerfile_path):
 
 # Upload to HuggingFace Space
 api.upload_folder(
-    folder_path="predictive-maintenance/hosting",        # the local folder containing your files
+    folder_path=build_dir,        # the local folder containing your files
     repo_id="ksricheenu/Predictive-Maintenance-Prediction", # the target repo space in huggingface
     repo_type="space",                      # dataset, model, or space
     path_in_repo="",                          # optional: subfolder path inside the repo
 )
+
