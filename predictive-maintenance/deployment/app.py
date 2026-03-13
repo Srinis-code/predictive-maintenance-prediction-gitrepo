@@ -21,7 +21,7 @@ st.title("Vehicle breakdown & Engine failures - Predictive Maintenance")
 # ---------------------------
 engine_rpm = st.number_input("Engine Rpm", 500, 8000, 600)
 lub_oil_pressure = st.number_input("Lub Oil Pressure", 0.00,20.99,0.00)
-fuel_pressure = st.number_input("Fuel Pressure", 0.00,20.99,50.00)
+fuel_pressure = st.number_input("Fuel Pressure", 0.00,20.99,0.00)
 coolant_pressure = st.number_input("Coolant Pressure", 0.00,20.00,0.00)
 lube_oil_temp = st.number_input("Lub Oil Temperature", 60.00,200.99,60.00)
 coolant_temp = st.number_input("Coolant Temperature", 60.00,300.00,60.00)
