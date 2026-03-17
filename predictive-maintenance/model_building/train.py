@@ -1,6 +1,7 @@
 import pandas as pd
 import joblib
 import os
+from sklearn.tree import DecisionTreeClassifier
 
 from sklearn.ensemble import AdaBoostClassifier
 from sklearn.metrics import accuracy_score, recall_score, precision_score, f1_score
